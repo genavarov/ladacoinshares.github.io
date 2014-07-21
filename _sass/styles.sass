@@ -2,11 +2,649 @@
 @import "bootstrap/bootstrap"
 @import "bourbon/bourbon"
 @import "images"
+@import "fonts"
+@import "mixins"
+
+
+@import "footer"
 
 body
   background: $guide-gray-0
+  color: $guide-gray-1
+  font-weight: 300
 
-.getting-started,
+ul
+  list-style: none
+
+ul,
+li
+  margin: 0
+  padding: 0
+
+.nowrap
+  white-space: nowrap
+
 .stage
   background: $guide-blue-0
+  color: white
+
+.top-nav
+  font-weight: 500
+
+.top-nav li
+  +inline-block
+
+.top-nav a
+
+  &,
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus
+    color: white
+    text-decoration: none
+
+  &:hover
+    color: $guide-yellow-0
+
+.middot
+  background: white
+  border-radius: 7px
+  margin: 0 40px
+  position: relative
+  top: 7px
+  vertical-align: top
+  +size(7px)
+
+h1,
+h2,
+h3,
+h4
+  margin: 0
+  line-height: 1.3
+
+h1
+  font-size: 40px
+
+h2
+  font-size: 36px
+
+h3
+  font-size: 25px
+
+p
+  margin: 0
+
+p + p
+  margin-top: 1.5em
+
+
+.next
+  display: none
+  height: 0
+  overflow: visible
+
+.button-next
+  background: $guide-blue-0
+  border-radius: 50%
+  cursor: pointer
+  display: block
+  margin: 0 auto
+  padding: 13px
+  position: relative
+  top: -25px
+  +size(50px)
+
+.button-next .arrow
+  margin: 0 auto
+  +size(20px 26px)
+
+= on-dark
+  .arrow
+    +retina-image("/assets/images/arrow-white", 20px 26px, png, null, "@2x")
+
+= on-light
+  .arrow
+    +retina-image("/assets/images/arrow-blue", 20px 26px, png, null, "@2x")
+
+= button-next($bg-color)
+  .button-next
+    background: $bg-color
+
+
+.stage
+  padding: 0 0 120px
+
+.stage + .next
+  display: block
+  +button-next($guide-blue-0)
+  +on-dark
+
+.stage .headline
+  margin-bottom: 120px
+
+.top-nav
+  border-bottom: 1px solid white
+  padding: 30px 0
+
+.top-nav,
+.img-dogeparty
+  margin-bottom: 100px
+
+.counter
+  background: $guide-blue-4
+  border-radius: 8px
+  margin-bottom: 40px
+  padding: 30px
+  +box-shadow(inset darken($guide-blue-4, 10) 0 0 8px)
+  +inline-block
+
+.counter li
+  width: 130px
+  +inline-block
+  vertical-align: top
+
+.counter .separator
+  font-size: 50px
+  position: relative
+  text-align: center
+  top: -3px
+  width: 20px
+
+.counter .number
+  font-size: 50px
+
+.counter .caption
+  font-size: 20px
+
+.counter-caption
+  font-weight: 300
+
+
+.why-dogeparty
+  padding: 120px 0
+
+.why-dogeparty + .next,
+.team + .next
+  display: block
+  +button-next($guide-gray-0)
+  +on-light
+
+.why-dogeparty .headline
+  margin: 0 0 60px
+
+.why-dogeparty h3
+  color: $guide-blue-0
+  margin: 0 0 25px
+
+.profits .row
+  margin-top: 80px
+
+
+.getting-started
+  background: $guide-blue-5
+  color: white
+  padding: 100px 0
+
+.getting-started + .next
+  display: block
+  +button-next($guide-blue-5)
+  +on-dark
+
+.getting-started .headline
+  margin: 100px 0 60px
+
+.dogecoin-note
+  font-size: 24px
+
+.steps li
+  padding: 0 0 0 85px
+  position: relative
+
+.steps li + li
+  margin-top: 1.5em
+
+.getting-started .num
+  background: white
+  border-radius: 50%
+  color: $guide-blue-0
+  font-size: 20px
+  font-weight: 500
+  left: 25px
+  line-height: 36px
+  position: absolute
+  text-align: center
+  top: 0
+  +size(35px)
+
+.what-is-dp
+  margin-top: 140px
+
+.what-is-dp h2
+  margin: 0 0 50px
+
+.about-dp h3
+  color: $guide-yellow-0
+  margin: 0 0 25px
+
+.about-dp .row
+  margin-top: 80px
+
+
+.team
+  padding: 100px 0
+
+.team-member-img
+  border: 8px solid $guide-gray-2
+  border-radius: 50%
+  margin-bottom: 15px
+  +size(160px)
+
+.team .hr
+  background: $guide-blue-3
+  height: 2px
+  margin: 120px 0 60px
+  overflow: visible
+
+.team .hr-title
+  background: $guide-gray-0
+  color: $guide-blue-3
+  font-size: 30px
+  padding: 0 50px
+  position: relative
+  top: -0.5em
+  +inline-block
+
+.team .member
+  margin-top: 60px
+  width: 200px
+  +inline-block()
+
+.team .one
+  text-align: left
+
+.team .three
+  text-align: right
+
+
+.xdp
+  background: $guide-blue-1
+  color: white
+  padding: 120px 0
+
+.xdp .headline
+  margin: 100px 0 40px
+
+
+// Tabletoshis
+
++on-tablet
+
+  body
+    font-size: 17px
+
+  .stage
+    padding: 0 0 70px
+
+  .top-nav
+    font-size: 16px
+
+  .middot
+    margin: 0 25px
+
+  .top-nav,
+  .img-dogeparty
+    margin-bottom: 70px
+
+  .img-dogeparty
+    +size(200px)
+
+  .stage .headline
+    font-size: 22px
+    line-height: 1.5
+    margin-bottom: 70px
+
+  .counter
+    border-radius: 4px
+    padding: 15px
+
+  .counter li
+    width: 100px
+
+  .counter .caption
+    font-size: 15px
+    margin-top: -5px
+
+  .counter-caption
+    font-size: 17px
+
+
+  .why-dogeparty
+    padding: 80px 0
+
+  .why-dogeparty .headline
+    margin-bottom: 40px
+
+  .why-dogeparty h3
+    margin: 0 0 20px
+
+
+  .img-hand
+    +size(142px)
+
+  .getting-started .headline
+    margin: 40px 0 50px
+
+  .steps li
+    padding: 0 0 0 65px
+
+  .getting-started .num
+    font-size: 17px
+    left: 20px
+    line-height: 31px
+    +size(30px)
+
+  .what-is-dp
+    margin-top: 90px
+
+  .what-is-dp h2
+    font-size: 30px
+    margin-bottom: 40px
+
+  .about-dp .row
+    margin-top: 60px
+
+  .about-dp h3
+    margin: 0 0 20px
+
+  .img-publish
+    +size(108px 117px)
+
+  .img-tickets
+    +size(133px 164px)
+
+  .img-charity
+    +size(104px 134px)
+
+
+  .team
+    padding: 90px 0
+
+  .team-member-img
+    border-width: 7px
+    +size(140px)
+
+  .team .hr
+    height: 1px
+    margin: 100px 0 20px
+
+  .team .hr-title
+    font-size: 25px
+
+  .team .member p
+    font-size: 20px
+
+  .socialgiver .member
+    width: 225px
+
+
+  .xdp
+    padding: 90px 0
+
+  .img-desktop
+    +size(142px)
+
+  .xdp .headline
+    margin: 40px 0 50px
+
+  .img-pdfdoc
+    +size(83px 105px)
+
+
+  .powered-by
+    font-size: 12px
+
+
+// Mobilemagic
+
++on-mobile
+
+  body
+    font-size: 14px
+
+  .stage
+    padding: 0 0 60px
+
+  .top-nav
+    border: 0
+    font-size: 21px
+    margin-bottom: 0
+    padding: 0
+
+  .top-nav li
+    display: block
+
+  .top-nav li + li a
+    border-top: 1px solid white
+
+  .top-nav a
+    background: $guide-blue-2
+    display: block
+    padding: 25px ($grid-gutter-width / 2)
+    margin-left: -$grid-gutter-width / 2
+    width: 100%
+    +box-sizing(content-box)
+
+  .top-nav .separator
+    display: none
+
+  .img-dogeparty
+    +size(125px)
+
+  .menu-headline,
+  .img-dogeparty
+    margin-bottom: 30px
+
+  .stage .headline
+    font-size: 17px
+    margin-bottom: 60px
+
+  .counter-caption
+    font-size: 14px
+
+  .counter
+    border-radius: 4px
+    margin-bottom: 20px
+    padding: 15px 15px 18px
+
+  .counter li
+    width: 50px
+
+  .counter .number,
+  .counter .separator
+    font-size: 30px
+
+  .counter .caption
+    font-size: 10px
+    margin-top: -3px
+
+  .menu-headline
+    border-bottom: 1px solid white
+    font-size: 20px
+    line-height: 33px
+    margin-left: -$grid-gutter-width / 2
+    padding: 20px ($grid-gutter-width / 2) 17px
+    width: 100%
+    +box-sizing(content-box)
+
+  .circled-arrow
+    margin-right: 20px
+    position: relative
+    top: -2px
+    vertical-align: top
+    +inline-block
+    +retina-image("/assets/images/circled-arrow", 33px 33px, png, null, "@2x")
+    +size(33px)
+
+
+
+  .why-dogeparty
+    padding: 60px 0
+    text-align: center
+
+  .why-dogeparty .headline
+    font-size: 21px
+    margin: 0 0 40px
+
+  .profits .row
+    margin-top: 40px
+
+  .img-stop-watch,
+  .img-piggy,
+  .img-hands
+    margin: 0 0 30px
+
+  .img-stop-watch
+    +size(82px 80px)
+
+  .img-piggy
+    +size(77px 75px)
+
+  .img-hands
+    +size(79px 63px)
+
+  .why-dogeparty h3
+    border: solid lighten($guide-gray-3, 20)
+    border-width: 1px 0
+    font-size: 20px
+    margin-left: -($grid-gutter-width / 2)
+    padding: 15px ($grid-gutter-width / 2)
+    width: 100%
+    +box-sizing(content-box)
+
+
+  .getting-started
+    padding: 50px 0
+    text-align: center
+
+  .img-hand
+    +size(120px)
+
+  .getting-started .headline
+    font-size: 21px
+    margin: 30px 0 40px
+
+  .getting-started .num
+    font-size: 16px
+    line-height: 31px
+    margin: 0 auto 20px
+    position: static
+    +size(30px)
+
+  .steps li
+    padding: 0
+
+  .steps li + li
+    margin-top: 2.5em
+
+  .what-is-dp
+    margin-top: 60px
+
+  .what-is-dp h2
+    font-size: 21px
+    margin: 0 0 30px
+
+  .about-dp h3
+    border: solid white
+    border-width: 1px 0
+    color: white
+    font-size: 20px
+    margin-left: -($grid-gutter-width / 2)
+    padding: 15px ($grid-gutter-width / 2)
+    width: 100%
+    +box-sizing(content-box)
+
+  .about-dp .row
+    margin-top: 40px
+
+  .img-charity,
+  .img-tickets,
+  .img-publish
+    margin: 0 0 30px
+
+  .img-charity
+    +size(65px 85px)
+
+  .img-tickets
+    +size(75px 92px)
+
+  .img-publish
+    +size(83px 91px)
+
+
+  .team
+    padding: 50px 0
+
+  .team .headline
+    font-size: 21px
+
+  .team-member-img
+    border-width: 6px
+    +size(90px)
+
+  .team .hr
+    height: 1px
+    margin: 40px 0 30px
+
+  .team .hr-title
+    font-size: 15px
+    padding: 0 30px
+
+  .team .member
+    margin-top: 20px
+    width: 130px
+
+  .team .member p
+    font-size: 14px
+
+  .team .odd
+    text-align: left
+
+  .team .even
+    text-align: right
+
+
+
+  .xdp
+    padding: 60px 0
+
+  .xdp .headline
+    border: solid white
+    border-width: 1px 0
+    color: white
+    font-size: 20px
+    margin: 30px 0 40px (-$grid-gutter-width / 2)
+    padding: 15px ($grid-gutter-width / 2)
+    width: 100%
+    +box-sizing(content-box)
+
+  .img-pdfdoc
+    margin: 40px 0 0px
+    +size(61px 76px)
+
+  .img-desktop
+    +size(120px)
+
+
+  .footer
+    padding: 60px 0
+
+  .powered-by
+    font-size: 12px
+
+  .powered-by + p
+    margin-top: 0.7em
+
+  .img-humint
+    +size(51px 76px)
 

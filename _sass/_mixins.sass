@@ -1,0 +1,27 @@
+// Responsiveness - helpers
+
+= on-mobile
+  +for-screen-size(null $screen-sm-min - 1px)
+    @content
+
+= on-tablet
+  +for-screen-size($screen-sm-min $screen-md-min - 1px)
+    @content
+
+= for-screen-size($widths)
+  $widths: append($widths, null)
+  $min: nth($widths, 1)
+  $max: nth($widths, 2)
+
+  @if type-of($min) == number and type-of($max) == number
+    @media (min-width: $min) and (max-width: $max)
+      @content
+  @else if type-of($min) == number
+    @media (min-width: $min)
+      @content
+  @else if type-of($max) == number
+    @media (max-width: $max)
+      @content
+  @else
+    @content
+
