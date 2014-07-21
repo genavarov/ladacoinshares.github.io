@@ -17,3 +17,12 @@ $(".showable-toggle").click(function (e) {
 $(".xdp .headline").click(function (e) {
   $(e.currentTarget).closest(".container").toggleClass("open");
 });
+
+var div = $("<div>");
+var timeout = new Date(2014, 6, 30);
+div.countdown({ until: timeout, timezone: 0, format: "DHM", onTick: function (args) {
+  $(".counter .days").text(args[3]);
+  $(".counter .hours").text(args[4]);
+  $(".counter .minutes").text(args[5]);
+} });
+
