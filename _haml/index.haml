@@ -16,10 +16,10 @@
                 %a{href: "#get-started", "data-scroll-to" => "#get-started"} Get Started
               %li.separator.middot
               %li
-                %a{href: "#dp-team", "data-scroll-to" => "#team"} Team
+                %a{href: "#dp-team", "data-scroll-to" => "#team"} DP Team
               %li.separator.middot
               %li
-                %a{href: "#get-tech-stuff", "data-scroll-to" => "#tech"} Get Tech Stuff
+                %a{href: "#get-tech-stuff", "data-scroll-to" => "#tech"} What is XDP?
 
         .row.visible-xs
           .col-xs-12.text-center
@@ -30,22 +30,31 @@
         .row
           .col-xs-12.text-center
             %img.img-dogeparty{alt: "Dogeparty", src: "/assets/images/dogeparty@2x.png"}/
-            %h2.headline Dogeparty is a layer on the Dogecoin network for new coins  that foster creativity and promote social good.
+            %h2.headline Dogeparty is a layer on the Dogecoin network for new coins that foster creativity and promote social good.
 
-            %ul.counter
-              %li
-                .number.days 0
-                .caption days
-              %li.separator :
-              %li
-                .number.hours 0
-                .caption hours
-              %li.separator :
-              %li
-                .number.minutes 0
-                .caption minutes
+            .counter-container
+              .counter-caption
+                .title until Dogeparty launch
+              %ul.counter
+                %li
+                  .number.days 0
+                  .caption days
+                %li.separator :
+                %li
+                  .number.hours 0
+                  .caption hours
+                %li.separator :
+                %li
+                  .number.minutes 0
+                  .caption minutes
 
-            %h3.counter-caption until Dogeparty launch
+        .row
+          .col-xs-8.col-xs-offset-2
+            %p.reminder-note.text-center
+              %span Want a
+              %a{href: "javascript:void 0;", "data-scroll-to" => "#footer"} reminder
+              %span when
+              %span.nowrap we're ready to go?
 
 
     .section.next
@@ -288,13 +297,35 @@
               %span Download the Dogeparty
               %span.nowrap Issuance Outline.
 
-    .section.footer
+    .section.next
       .container
         .row
           .col-xs-12
-            %p.powered-by.text-center Powered by
-            %p
-              %img.img-humint{alt: "Humint", src: "/assets/images/humint@2x.png"}/
+            .button-next(data-scroll-to="#footer")
+              .arrow
+
+    #footer.section.footer
+      = Haml::Engine.new(File.read("_haml/_mail_chimp.haml")).render
+
+      .container
+        .row.social-icons
+          .col-xs-12.text-center
+            %a.social-icon.twitter-icon{href: "#twitter"}> Twitter
+            %a.social-icon.reddit-icon{href: "#reddit"}> Reddit
+            %a.social-icon.github-icon{href: "#github"} Github
+
+        .row
+          .col-xs-12.text-center
+            %p.powered-by Powered by
+
+        .row
+          .col-xs-6.text-right
+            %a{href: "http://www.humint.is"}
+              %img.img-humint{alt: "Humint", src: "/assets/images/humint@2x.png", title: "Humint"}/
+          .col-xs-6.text-left
+            %a{href: "http://socialgiver.com/"}
+              %img.img-socialgiver{alt: "SocialGiver", src: "/assets/images/socialgiver@2x.png", title: "SocialGiver"}/
+
     %script{src: "/assets/javascripts/jquery-1.11.1.min.js", type: "text/javascript"}
     %script{src: "/assets/javascripts/jquery.plugin.min.js", type: "text/javascript"}
     %script{src: "/assets/javascripts/jquery.countdown.min.js", type: "text/javascript"}

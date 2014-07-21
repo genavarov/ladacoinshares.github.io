@@ -3,3 +3,60 @@
   color: white
   padding: 80px 0
 
+.signup p + p
+  margin-top: 10px
+
+input[type="email"]
+  background: $guide-gray-0
+  color: $guide-gray-1
+  outline: 0 !important
+  width: 375px
+  +box-shadow(none)
+
+  &:focus
+    background: lighten($guide-gray-0, 3)
+
+input[type="submit"],
+input[type="email"]
+  border: 0
+  font-size: 14px
+  outline: 0 !important
+  padding: 12px 10px 10px
+  +inline-block
+
+input[type="submit"]
+  background: $guide-blue-6
+  padding-left: 30px
+  padding-right: 30px
+
+  &:hover,
+  &:focus
+    background: lighten($guide-blue-6, 3)
+
+.signup-form
+  margin: 30px 10px 0
+
+.social-icons
+  margin: 40px
+
+.social-icon
+  +hide-text
+  +inline-block
+  +size(45px)
+
+.twitter-icon
+  +retina-image("/assets/images/twitter", 45px 45px, png, null, "@2x")
+
+.reddit-icon
+  +retina-image("/assets/images/reddit", 45px 45px, png, null, "@2x")
+
+.github-icon
+  +retina-image("/assets/images/github", 45px 45px, png, null, "@2x")
+
+.social-icon + .social-icon
+  margin-left: 20px
+
+.powered-by
+  margin-bottom: 20px
+
+
