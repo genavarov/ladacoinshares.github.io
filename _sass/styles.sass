@@ -412,6 +412,34 @@ p + p
   body
     font-size: 14px
 
+  .toggle-icon
+    color: $guide-gray-3
+    font-size: 25px
+    right: 25px
+    position: absolute
+    text-align: center
+    top: 14px
+    +size(25px)
+
+  .about-dp .toggle-icon
+    color: white
+
+  .open .plus,
+  .toggle-icon .minus,
+  .showable
+    display: none
+
+  .showable-toggle
+    margin-bottom: 0
+
+  .open .showable,
+  .open .minus
+    display: block
+
+  .open .showable-toggle
+    margin-bottom: 25px
+
+
   .stage
     padding: 0 0 60px
 
@@ -491,7 +519,6 @@ p + p
     +size(33px)
 
 
-
   .why-dogeparty
     padding: 60px 0
     text-align: center
@@ -523,6 +550,7 @@ p + p
     font-size: 20px
     margin-left: -($grid-gutter-width / 2)
     padding: 15px ($grid-gutter-width / 2)
+    position: relative
     width: 100%
     +box-sizing(content-box)
 
@@ -565,6 +593,7 @@ p + p
     font-size: 20px
     margin-left: -($grid-gutter-width / 2)
     padding: 15px ($grid-gutter-width / 2)
+    position: relative
     width: 100%
     +box-sizing(content-box)
 
@@ -627,10 +656,17 @@ p + p
     border-width: 1px 0
     color: white
     font-size: 20px
-    margin: 30px 0 40px (-$grid-gutter-width / 2)
+    margin: 30px 0 20px (-$grid-gutter-width / 2)
     padding: 15px ($grid-gutter-width / 2)
+    position: relative
     width: 100%
     +box-sizing(content-box)
+
+  .xdp .open .headline
+    margin-bottom: 40px
+
+  .xdp .toggle-icon
+    color: white
 
   .img-pdfdoc
     margin: 40px 0 0px

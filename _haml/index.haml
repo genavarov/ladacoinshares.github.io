@@ -70,8 +70,12 @@
           .col-xs-12.col-sm-4.text-center
             %img.img-stop-watch{alt: "10x Faster", src: "/assets/images/stop-watch@2x.png"}/
           .col-xs-12.col-sm-8
-            %h3 10x Faster
-            %p
+            %h3.showable-toggle
+              %span 10x Faster
+              .toggle-icon.visible-xs
+                %strong.plus +
+                %strong.minus -
+            %p.showable
               Transactions confirmation times on Dogeparty are typically 10x faster than traditional Bitcoin
               transactions, at 1-10 minutes. This opens the door to whole new applications impossible with slower network speeds.
 
@@ -79,8 +83,12 @@
           .col-xs-12.text-center.visible-xs
             %img.img-piggy{alt: "100x Cheaper", src: "/assets/images/piggy@2x.png"}/
           .col-xs-12.col-sm-8
-            %h3 100x Cheaper
-            %p
+            %h3.showable-toggle
+              %span 100x Cheaper
+              .toggle-icon.visible-xs
+                %strong.plus +
+                %strong.minus -
+            %p.showable
               Bitcoin transaction fees can be around .... while doge fees are closer to ... This means that micro-transactions
               that would be unfeasible on Bitcoin can thrive on Dogeparty, ideal for socially oriented projects.
           .col-xs-4.text-center.hidden-xs
@@ -90,8 +98,12 @@
           .col-xs-12.col-sm-4.text-center
             %img.img-hands{alt: "Friendly", src: "/assets/images/hands@2x.png"}/
           .col-xs-12.col-sm-8
-            %h3 Friendly
-            %p
+            %h3.showable-toggle
+              %span Friendly
+              .toggle-icon.visible-xs
+                %strong.plus +
+                %strong.minus -
+            %p.showable
               With Dogeparty you can take part in an community-driven global marketplace of good, where anything and
               everything is traded with no exchange fees. If this is a message that resonates with you, we’d love your support.
 
@@ -138,8 +150,12 @@
           .col-xs-12.col-sm-4.text-center
             %img.img-publish{alt: "Create", src: "/assets/images/publish@2x.png"}/
           .col-xs-12.col-sm-8
-            %h3 Create
-            %p
+            %h3.showable-toggle
+              %span Create
+              .toggle-icon.visible-xs
+                %strong.plus +
+                %strong.minus -
+            %p.showable
               Want to publish a book or album without a publisher or have an amazing product ? Create your own token,
               put up a page explaining your goals and collect DOGE donations from your supporters!  You get the funds,
               your backers get a token that can give them access or  a share of the project. When you're ready,
@@ -148,8 +164,12 @@
           .col-xs-12.text-center.visible-xs
             %img.img-tickets{alt: "Plan events", src: "/assets/images/tickets@2x.png"}/
           .col-xs-12.col-sm-8
-            %h3 Plan events
-            %p
+            %h3.showable-toggle
+              %span Plan events
+              .toggle-icon.visible-xs
+                %strong.plus +
+                %strong.minus -
+            %p.showable
               Planning an actual Doge Party, or even just a normal human event? Raise funds for the work and costs
               by selling an EVENT coin that can then be used at the event to pay for entry, drinks, and shibe snacks.
               You get the funds up front, and your guests get something tangible (and fungible) in return. This allows
@@ -161,8 +181,12 @@
           .col-xs-12.col-sm-4.text-center
             %img.img-charity{alt: "Give back", src: "/assets/images/charity@2x.png"}/
           .col-xs-12.col-sm-8
-            %h3 Give back
-            %p
+            %h3.showable-toggle
+              %span Give back
+              .toggle-icon.visible-xs
+                %strong.plus +
+                %strong.minus -
+            %p.showable
               Raising funds for doing good?  Create a CharityCoin to give back to donors who support your cause.
               You can then make the token valuable by having businesses and supporters donate   and services which
               are auctioned for the CharityCoin at one-off or periodic events where only the CharityCoin is accepted.
@@ -235,20 +259,26 @@
         .row
           .col-xs-12.text-center
             %img.img-desktop{alt: "What is XDP?", src: "/assets/images/desktop@2x.png"}/
-            %h1.headline What is XDP?
+            %h1.headline
+              %span What is XDP?
+              .toggle-icon.visible-xs
+                %strong.plus +
+                %strong.minus -
+
         .row
           .col-xs-10.col-xs-offset-1.col-sm-10.col-sm-offset-1.col-md-12.col-md-offset-0.text-center
-            %p
-              Dogeparty uses XDP, a coin that can be controlled by the Dogeparty protocol. This means that XDP can do some
-              things that are impossible for a standard Dogecoin. Most importantly the Dogeparty protocol itself can be the
-              trusted third party in a variety of ways.
-            %p
-              For example, when someone places an order to sell XDP, or places a bet, or buys a Dogeparty-created asset
-              using XDP, the funds for their order are held by the Dogecoin blockchain, enabling easy, fast, and trustless
-              interactions. So, while Dogeparty runs on the power of DOGE, you'll need XDP to do awesome things on Dogeparty.
-            %p
-              We have created ***** XDP for allocation, which will be distributed via Proof of Charity (PoC). For more
-              information on that and other issuance details, please download the doc below.
+            .showable
+              %p
+                Dogeparty uses XDP, a coin that can be controlled by the Dogeparty protocol. This means that XDP can do some
+                things that are impossible for a standard Dogecoin. Most importantly the Dogeparty protocol itself can be the
+                trusted third party in a variety of ways.
+              %p
+                For example, when someone places an order to sell XDP, or places a bet, or buys a Dogeparty-created asset
+                using XDP, the funds for their order are held by the Dogecoin blockchain, enabling easy, fast, and trustless
+                interactions. So, while Dogeparty runs on the power of DOGE, you'll need XDP to do awesome things on Dogeparty.
+              %p
+                We have created ***** XDP for allocation, which will be distributed via Proof of Charity (PoC). For more
+                information on that and other issuance details, please download the doc below.
             %img.img-pdfdoc{alt: "PDF", src: "/assets/images/pdfdoc@2x.png"}/
             %p.hidden-xs Download the Dogeparty Issuance Outline.
             %p.hidden-xs
