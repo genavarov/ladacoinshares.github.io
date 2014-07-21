@@ -6,3 +6,6 @@ $("[data-scroll-to]").click(function (e) {
   return false;
 });
 
+$(".menu-headline").click(function (e) {
+  $(e.currentTarget).closest(".stage").toggleClass("has-menu");
+});
