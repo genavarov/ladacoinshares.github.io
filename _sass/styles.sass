@@ -1,9 +1,9 @@
 @import "variables"
 @import "bootstrap/bootstrap"
 @import "bourbon/bourbon"
+@import "mixins"
 @import "images"
 @import "fonts"
-@import "mixins"
 
 
 @import "footer"
@@ -429,15 +429,9 @@ p + p
   .showable
     display: none
 
-  .showable-toggle
-    margin-bottom: 0
-
   .open .showable,
   .open .minus
     display: block
-
-  .open .showable-toggle
-    margin-bottom: 25px
 
 
   .stage
@@ -687,4 +681,11 @@ p + p
 
   .img-humint
     +size(51px 76px)
+
+
+  .section .showable-toggle
+    margin-bottom: 0
+
+  .section .open .showable-toggle
+    margin-bottom: 25px
 

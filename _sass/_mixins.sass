@@ -8,6 +8,10 @@
   +for-screen-size($screen-sm-min $screen-md-min - 1px)
     @content
 
+= on-gte-tablet
+  +for-screen-size($screen-sm-min)
+    @content
+
 = for-screen-size($widths)
   $widths: append($widths, null)
   $min: nth($widths, 1)
