@@ -2,7 +2,6 @@
 _site
 .sass-cache
 _sass/bourbon
-assets/stylesheets/styles.css
 
 .DS_Store
-index.html
+
