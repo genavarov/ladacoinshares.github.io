@@ -1,0 +1,270 @@
+!!! 5
+%html
+  %head
+    %title Dogeparty
+    %link{href: "/assets/stylesheets/styles.css", rel: "stylesheet", type: "text/css"}/
+  %body
+    .section.stage
+      .container
+        .row
+          .col-xs-12.text-center
+            %ul.top-nav
+              %li
+                %a{href: "#why-dogeparty", "data-scroll-to" => "#why-dogeparty"} Why Dogeparty?
+              %li.separator.middot
+              %li
+                %a{href: "#get-started", "data-scroll-to" => "#get-started"} Get Started
+              %li.separator.middot
+              %li
+                %a{href: "#dp-team", "data-scroll-to" => "#team"} Team
+              %li.separator.middot
+              %li
+                %a{href: "#get-tech-stuff", "data-scroll-to" => "#tech"} Get Tech Stuff
+
+        .row.visible-xs
+          .col-xs-12.text-center
+            %h2.menu-headline
+              .circled-arrow>
+              %span Menu
+
+        .row
+          .col-xs-12.text-center
+            %img.img-dogeparty{alt: "Dogeparty", src: "/assets/images/dogeparty@2x.png"}/
+            %h2.headline Dogeparty is a layer on the Dogecoin network for new coins  that foster creativity and promote social good.
+
+            %ul.counter
+              %li
+                .number 7
+                .caption days
+              %li.separator :
+              %li
+                .number 15
+                .caption hours
+              %li.separator :
+              %li
+                .number 01
+                .caption minutes
+
+            %h3.counter-caption until Dogeparty launch
+
+
+    .section.next
+      .container
+        .row
+          .col-xs-12
+            .button-next(data-scroll-to="#why-dogeparty")
+              .arrow
+
+    #why-dogeparty.section.why-dogeparty
+      .container
+        .row
+          .col-xs-12
+            %h1.headline.text-center Why Dogeparty?
+            %p.text-center
+              Bitcoin-based Counterparty is a fantastic system for serious crypto-finance, but for smaller
+              value transactions, when it comes to placing orders, creating assets, and generally taking care
+              of business Doge brings some great advantages to the party.
+
+      %ul.container.profits
+        %li.row
+          .col-xs-12.col-sm-4.text-center
+            %img.img-stop-watch{alt: "10x Faster", src: "/assets/images/stop-watch@2x.png"}/
+          .col-xs-12.col-sm-8
+            %h3 10x Faster
+            %p
+              Transactions confirmation times on Dogeparty are typically 10x faster than traditional Bitcoin
+              transactions, at 1-10 minutes. This opens the door to whole new applications impossible with slower network speeds.
+
+        %li.row
+          .col-xs-12.text-center.visible-xs
+            %img.img-piggy{alt: "100x Cheaper", src: "/assets/images/piggy@2x.png"}/
+          .col-xs-12.col-sm-8
+            %h3 100x Cheaper
+            %p
+              Bitcoin transaction fees can be around .... while doge fees are closer to ... This means that micro-transactions
+              that would be unfeasible on Bitcoin can thrive on Dogeparty, ideal for socially oriented projects.
+          .col-xs-4.text-center.hidden-xs
+            %img.img-piggy{alt: "100x Cheaper", src: "/assets/images/piggy@2x.png"}/
+
+        %li.row
+          .col-xs-12.col-sm-4.text-center
+            %img.img-hands{alt: "Friendly", src: "/assets/images/hands@2x.png"}/
+          .col-xs-12.col-sm-8
+            %h3 Friendly
+            %p
+              With Dogeparty you can take part in an community-driven global marketplace of good, where anything and
+              everything is traded with no exchange fees. If this is a message that resonates with you, we’d love your support.
+
+    .section.next
+      .container
+        .row
+          .col-xs-12
+            .button-next(data-scroll-to="#get-started")
+              .arrow
+
+    #get-started.section.getting-started
+      .container
+        .row
+          .col-xs-12
+            %img.img-hand{alt: "Get Started", src: "/assets/images/hand@2x.png"}/
+            %h1.headline.text-center Get Started
+            %ul.steps
+              %li
+                .num 1
+                %span
+                  Get some dogecoin (DOGE): You'll need this to get yourself some XDP, the Dogeparty coin needed to create assets
+                  and do other cool stuff. Luckily, DOGE are easy to get! Make a smart comment over on reddit.com/r/dogecoin
+                  to get tips from users, try an exchange like Cryptsy, or check out Dogecoin Faucets.
+              %li
+                .num 2
+                %span
+                  You will also need to grab yourself a Counterwallet, in order to create and hold the Dogeparty token assets.
+                  You can create one at counterwallet.co
+              %li
+                .num 3
+                %span
+                  Hang on until the Dogeparty launch time, when the address to send your Doge is revealed.
+
+        .row.what-is-dp
+          .col-xs-12
+            %h2.text-center What Can I Do with Dogeparty?
+            %p.text-center
+              A lot, actually. Making your own token on Dogeparty means you can have your own asset to distribute, while
+              still supporting the Dogecoin network and community. Raise funds in DOGE, and reward your supporters with
+              a custom coin that can be tailored to your needs, without needing your own blockchain!
+
+      %ul.container.about-dp
+        %li.row
+          .col-xs-12.col-sm-4.text-center
+            %img.img-publish{alt: "Create", src: "/assets/images/publish@2x.png"}/
+          .col-xs-12.col-sm-8
+            %h3 Create
+            %p
+              Want to publish a book or album without a publisher or have an amazing product ? Create your own token,
+              put up a page explaining your goals and collect DOGE donations from your supporters!  You get the funds,
+              your backers get a token that can give them access or  a share of the project. When you're ready,
+              reward your backers by trading your work for the coin you gave out.
+        %li.row
+          .col-xs-12.text-center.visible-xs
+            %img.img-tickets{alt: "Plan events", src: "/assets/images/tickets@2x.png"}/
+          .col-xs-12.col-sm-8
+            %h3 Plan events
+            %p
+              Planning an actual Doge Party, or even just a normal human event? Raise funds for the work and costs
+              by selling an EVENT coin that can then be used at the event to pay for entry, drinks, and shibe snacks.
+              You get the funds up front, and your guests get something tangible (and fungible) in return. This allows
+              you to cover costs, and also give your backers a guaranteed unit of value beyond a name on the guestlist.
+              In fact, the coin IS the guestlist!
+          .col-sm-4.text-center.hidden-xs
+            %img.img-tickets{alt: "Plan events", src: "/assets/images/tickets@2x.png"}/
+        %li.row
+          .col-xs-12.col-sm-4.text-center
+            %img.img-charity{alt: "Give back", src: "/assets/images/charity@2x.png"}/
+          .col-xs-12.col-sm-8
+            %h3 Give back
+            %p
+              Raising funds for doing good?  Create a CharityCoin to give back to donors who support your cause.
+              You can then make the token valuable by having businesses and supporters donate   and services which
+              are auctioned for the CharityCoin at one-off or periodic events where only the CharityCoin is accepted.
+
+    .section.next
+      .container
+        .row
+          .col-xs-12
+            .button-next(data-scroll-to="#team")
+              .arrow
+
+    #team.section.team.text-center
+      .container
+        .row
+          .col-xs-12
+            %h1.headline The Dogeparty Team
+            .hr
+              %h2.hr-title Humint
+
+        %ul.row
+          %li.col-xs-6.col-sm-4.one.even
+            .member.text-center
+              %img.team-member-img{alt: "Wendell Davis", src: "/assets/images/team/wendell-davis.jpg"}
+              %p Wendell Davis
+          %li.col-xs-6.col-sm-4.two.odd
+            .member.text-center
+              %img.team-member-img{alt: "Matt Innes", src: "/assets/images/team/matt-innes.jpg"}
+              %p Matt Innes
+          %li.col-xs-6.col-sm-4.three.even
+            .member.text-center
+              %img.team-member-img{alt: "Michael Keferl", src: "/assets/images/team/michael-keferl.png"}
+              %p Michael Keferl
+          %li.col-xs-6.col-sm-4.one.odd
+            .member.text-center
+              %img.team-member-img{alt: "Lars Kluge", src: "/assets/images/team/lars-kluge.jpg"}
+              %p Lars Kluge
+          %li.col-xs-6.col-sm-4.two.even
+            .member.text-center
+              %img.team-member-img{alt: "Adam B. Levine", src: "/assets/images/team/adam-levine.jpg"}
+              %p Adam B. Levine
+          %li.col-xs-6.col-sm-4.three.odd
+            .member.text-center
+              %img.team-member-img{alt: "Saori Kajiwara", src: "/assets/images/team/saori-kajiwara.jpg"}
+              %p Saori Kajiwara
+
+        .row
+          .col-xs-12
+            .hr
+              %h2.hr-title SocialGiver
+
+        %ul.row.socialgiver
+          %li.col-xs-6.col-sm-5.col-sm-offset-1.col-md-4.col-md-offset-2.one.even
+            .member.text-center
+              %img.team-member-img{alt: "Tarin Greco", src: "/assets/images/team/tarin-greco.jpg"}
+              %p Tarin Greco
+          %li.col-xs-6.col-sm-5.col-md-4.three.odd
+            .member.text-center
+              %img.team-member-img{alt: "Arch Wongchindawest", src: "/assets/images/team/arch-wongchindawest.jpg"}
+              %p Arch Wongchindawest
+
+    .section.next
+      .container
+        .row
+          .col-xs-12
+            .button-next(data-scroll-to="#tech")
+              .arrow
+
+    #tech.section.xdp
+      .container
+        .row
+          .col-xs-12.text-center
+            %img.img-desktop{alt: "What is XDP?", src: "/assets/images/desktop@2x.png"}/
+            %h1.headline What is XDP?
+        .row
+          .col-xs-10.col-xs-offset-1.col-sm-10.col-sm-offset-1.col-md-12.col-md-offset-0.text-center
+            %p
+              Dogeparty uses XDP, a coin that can be controlled by the Dogeparty protocol. This means that XDP can do some
+              things that are impossible for a standard Dogecoin. Most importantly the Dogeparty protocol itself can be the
+              trusted third party in a variety of ways.
+            %p
+              For example, when someone places an order to sell XDP, or places a bet, or buys a Dogeparty-created asset
+              using XDP, the funds for their order are held by the Dogecoin blockchain, enabling easy, fast, and trustless
+              interactions. So, while Dogeparty runs on the power of DOGE, you'll need XDP to do awesome things on Dogeparty.
+            %p
+              We have created ***** XDP for allocation, which will be distributed via Proof of Charity (PoC). For more
+              information on that and other issuance details, please download the doc below.
+            %img.img-pdfdoc{alt: "PDF", src: "/assets/images/pdfdoc@2x.png"}/
+            %p.hidden-xs Download the Dogeparty Issuance Outline.
+            %p.hidden-xs
+              %span You can also read this post by Adam Levine
+              %span.nowrap about Proof of Charity.
+            %p.download-caption.visible-xs
+              %span Download the Dogeparty
+              %span.nowrap Issuance Outline.
+
+    .section.footer
+      .container
+        .row
+          .col-xs-12
+            %p.powered-by.text-center Powered by
+            %p
+              %img.img-humint{alt: "Humint", src: "/assets/images/humint@2x.png"}/
+    %script{src: "/assets/javascripts/jquery-1.11.1.min.js", type: "text/javascript"}
+    %script{src: "/assets/javascripts/scripts.js", type: "text/javascript"}
+
