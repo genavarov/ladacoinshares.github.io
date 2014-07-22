@@ -1721,7 +1721,7 @@ li {
 .middot {
   background: white;
   border-radius: 7px;
-  margin: 0 36px;
+  margin: 0 42px;
   position: relative;
   top: 7px;
   vertical-align: top;
@@ -1973,7 +1973,7 @@ p + p {
     font-size: 16px; }
 
   .middot {
-    margin: 0 20px; }
+    margin: 0 25px; }
 
   .top-nav,
   .img-dogeparty {
