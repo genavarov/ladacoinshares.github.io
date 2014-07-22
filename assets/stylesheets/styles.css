@@ -1609,7 +1609,10 @@ address {
 .footer {
   background: #2579c6;
   color: white;
-  padding: 80px 0; }
+  padding: 80px 0 40px; }
+
+.powered-by {
+  padding: 40px 0; }
 
 .signup p + p {
   margin-top: 10px; }
@@ -1643,7 +1646,7 @@ input[type="submit"] {
   margin: 30px 10px 0; }
 
 .social-icons {
-  margin: 40px; }
+  margin-top: 40px; }
 
 .social-icon {
   overflow: hidden;
@@ -1681,7 +1684,7 @@ input[type="submit"] {
   margin-left: 20px; }
 
 .powered-by {
-  margin-bottom: 20px; }
+  background: #2374bd; }
 
 body {
   background: #ececec;
@@ -2121,10 +2124,7 @@ p + p {
 
   input[type="submit"] {
     padding-left: 20px;
-    padding-right: 20px; }
-
-  .powered-by {
-    font-size: 12px; } }
+    padding-right: 20px; } }
 @media (max-width: 767px) {
   body {
     font-size: 14px; }
@@ -2198,7 +2198,9 @@ p + p {
     margin-bottom: 60px; }
 
   .counter-container {
-    padding-top: 25px; }
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px; }
 
   .counter {
     border-radius: 4px;
@@ -2429,13 +2431,7 @@ p + p {
     width: 120px; }
 
   .footer {
-    padding: 60px 0; }
-
-  .powered-by {
-    font-size: 12px; }
-
-  .powered-by + p {
-    margin-top: 0.7em; }
+    padding: 60px 0 40px; }
 
   .img-humint {
     height: 76px;
