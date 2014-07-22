@@ -1686,6 +1686,10 @@ input[type="submit"] {
 .powered-by {
   background: #2374bd; }
 
+.donations {
+  line-height: 2em;
+  margin-top: 30px; }
+
 body {
   background: #ececec;
   color: #58595b;
