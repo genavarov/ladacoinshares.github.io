@@ -7,7 +7,7 @@ $("[data-scroll-to]").click(function (e) {
 });
 
 $(".menu-headline").click(function (e) {
-  $(e.currentTarget).closest(".stage").toggleClass("has-menu");
+  $(e.currentTarget).closest(".stage").toggleClass("has-menu").addClass("is-touched");
 });
 
 $(".showable-toggle").click(function (e) {

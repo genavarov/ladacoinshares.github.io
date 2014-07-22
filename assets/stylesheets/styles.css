@@ -2119,7 +2119,10 @@ p + p {
     border: 0;
     font-size: 21px;
     margin: -320px 0 0;
-    padding: 0;
+    padding: 0; }
+
+  .is-touched .top-nav,
+  .has-menu .top-nav {
     -webkit-transition: all 150ms ease-in-out;
     -moz-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out; }
