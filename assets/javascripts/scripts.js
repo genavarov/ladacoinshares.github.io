@@ -20,7 +20,8 @@ $(".xdp .headline").click(function (e) {
 
 var div = $("<div>");
 var timeout = new Date(2014, 6, 30);
-div.countdown({ until: timeout, timezone: 0, format: "DHM", onTick: function (args) {
+var PST = -7; // utc is 0
+div.countdown({ until: timeout, timezone: PST, format: "DHM", onTick: function (args) {
   $(".counter .days").text(args[3]);
   $(".counter .hours").text(args[4]);
   $(".counter .minutes").text(args[5]);
