@@ -4,20 +4,15 @@
 
 ### Install dependencies
 
-    # Install gems
-    bundle install
+    npm install
 
-    # Install bourbon for non-rails project
-    bourbon install --path=_sass
+### Working with code
 
-    # Watch for changes to sass files
-    sass --watch _sass:assets/stylesheets
+    grunt watch
 
-    # Make jekyll watch it too
-    jekyll serve --watch
+### Running Jekyll
 
-    # Convert haml files to htmls after each change (manually)
-    haml _haml/index.haml > index.html
+    jekyll serve
 
 ## Contributing
 

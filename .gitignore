@@ -1,7 +1,7 @@
 *.swp
 _site
 .sass-cache
-_sass/bourbon
-
+_src/sass/bourbon
 .DS_Store
-
+node_modules
+bower_components

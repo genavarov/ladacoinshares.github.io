@@ -287,7 +287,7 @@
               .arrow
 
     #footer.section.footer
-      = Haml::Engine.new(File.read("_haml/_mail_chimp.haml")).render
+      = Haml::Engine.new(File.read("_src/haml/_mail_chimp.haml")).render
 
       .container
         .row.social-icons
@@ -314,9 +314,6 @@
             %a{href: "http://socialgiver.com/"}
               %img.img-socialgiver{alt: "SocialGiver", src: "assets/images/socialgiver@2x.png", title: "SocialGiver"}/
 
-    %script{src: "assets/javascripts/jquery-1.11.1.min.js", type: "text/javascript"}
-    %script{src: "assets/javascripts/jquery.plugin.min.js", type: "text/javascript"}
-    %script{src: "assets/javascripts/jquery.countdown.min.js", type: "text/javascript"}
     %script{src: "assets/javascripts/scripts.js", type: "text/javascript"}
-    = File.read("_haml/_google_analytics.html")
+    = File.read("_src/haml/_google_analytics.html")
 

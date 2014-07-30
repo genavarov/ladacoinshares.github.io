@@ -1,4 +1,10 @@
 exclude:
 - Gemfile
 - Gemfile.lock
+- package.json
+- bower.json
+- Gruntfile.coffee
+- node_modules
+- bower_components
+- README.md
 
