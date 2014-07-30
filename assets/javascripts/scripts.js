@@ -19,7 +19,7 @@ $(".xdp .headline").click(function (e) {
 });
 
 var div = $("<div>");
-var timeout = new Date(2014, 6, 30);
+var timeout = new Date(2014, 7, 13);
 var PST = -7; // utc is 0
 div.countdown({ until: timeout, timezone: PST, format: "DHM", onTick: function (args) {
   $(".counter .days").text(args[3]);
