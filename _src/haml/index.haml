@@ -57,13 +57,14 @@
           .col-xs-8.col-xs-offset-2
             %p.reminder-note.text-center
               %span
-                Thanks to everyone who voted &amp; suggested ideas, you decided in favour of
+                %span Thanks to everyone who voted, you decided in favour of
                 %strong Proof of Burn!
-                - # Check out our Reddit post for more detail.
-                Here is the
-                %a{href: "http://www.reddit.com/r/dogecoin/comments/2beiil/were_having_a_dogeparty/", target: "_blank"} original announcement
-                and if you want a reminder before the burn starts,
-                %a{href: "javascript:void 0;", "data-scroll-to" => "#footer"} go here.
+                %span More
+                = succeed "." do
+                  %a(href="http://www.reddit.com/r/dogecoin/comments/2c8on7/results_are_in_on_the_dogeparty_proof_of_burn_it/" target="_blank") details here
+                %span If you want a reminder before the burn starts,
+                = succeed "." do
+                  %a(href="javascript:void 0;" data-scroll-to="#footer") go here
 
     .section.next
       .container
