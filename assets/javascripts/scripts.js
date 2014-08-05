@@ -30,7 +30,7 @@ $(".showable-toggle").click(function (e) {
 });
 
 $(".xdp .headline").click(function (e) {
-  $(e.currentTarget).closest(".container").toggleClass("open");
+  $(e.currentTarget).closest(".section").toggleClass("open");
 });
 
 var div = $("<div>");
