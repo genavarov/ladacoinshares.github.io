@@ -52,9 +52,13 @@ module.exports = (grunt) ->
         files: ["*.html"]
         tasks: ["jekyll:dist"]
 
+      js:
+        files: ["_src/js/*.js"]
+        tasks: ["concat", "jekyll:dist"]
+
       sass:
         files: ["_src/sass/*.sass", "_src/sass/*.scss", "_src/sass/*.css"]
-        tasks: ["sass"]
+        tasks: ["sass", "jekyll:dist"]
 
   grunt.loadNpmTasks "grunt-bower-task"
   grunt.loadNpmTasks "grunt-jekyll"
