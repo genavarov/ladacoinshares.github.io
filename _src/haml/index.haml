@@ -37,12 +37,15 @@
             %img.img-dogeparty{alt: "Dogeparty", src: "assets/images/dogeparty@2x.png"}/
             %h2.headline Dogeparty is a layer on the Dogecoin network for new coins that foster creativity and promote social good.
 
-            %a.wallet-link(href="https://wallet.dogeparty.io/") Go to Dogeparty wallet
+            %a.wallet-link(href="https://wallet.dogeparty.io/") Go to Dogeparty Wallet
 
         .row
           .col-xs-8.col-xs-offset-2
             %p.reminder-note.text-center
-              The Burn has begun! Get started by creating a Doegeparty wallet, inject it with your precious Doge, and get to burning!
+              %span The Burn has begun! Get started by creating a
+              = succeed "," do
+                %a(href="https://wallet.dogeparty.io/") Dogeparty Wallet
+              %span inject it with your precious Doge, and get to burning!
 
     .section.next
       .container
