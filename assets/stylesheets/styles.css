@@ -1820,6 +1820,24 @@ p + p {
 .img-dogeparty {
   margin-bottom: 100px; }
 
+.wallet-link {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white !important;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 auto 30px;
+  max-width: 360px;
+  padding: 40px 0;
+  text-decoration: none !important; }
+
+.wallet-link:active,
+.wallet-link:focus {
+  position: relative;
+  top: 1px; }
+
 .counter-container {
   background: #3da8c6;
   border-radius: 8px;
@@ -2244,6 +2262,11 @@ p + p {
   .stage .headline {
     font-size: 17px;
     margin-bottom: 60px; }
+
+  .wallet-link {
+    font-size: 18px;
+    max-width: 320px;
+    padding: 30px 0; }
 
   .counter-container {
     padding-top: 25px;
