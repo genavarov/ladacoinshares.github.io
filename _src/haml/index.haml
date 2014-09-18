@@ -41,12 +41,21 @@
             %a.wallet-link(href="https://wallet.dogeparty.io/") Go to Dogeparty Wallet
 
         .row
-          .col-xs-8.col-xs-offset-2
+          .col-xs-8.col-xs-offset-2.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
             %p.reminder-note.text-center
-              %span The Burn has begun! Get started by creating a
-              = succeed "," do
-                %a(href="https://wallet.dogeparty.io/") Dogeparty Wallet
-              %span inject it with your precious Doge, and get to burning!
+              %span Thanks to everyone who took part! The burn period
+              %span.nowrap is now over.
+              %span.nowrap You burned over 1.8 Billion Doge!
+              %br
+              %span.nowrap
+                %span You can check the
+                %span final balance
+                = succeed "." do
+                  %a(href="http://www.xbalances.com/DDogepartyxxxxxxxxxxxxxxxxxxw1dfzr" target="_blank") here
+              %br
+              %span XDP is now trading on
+              = succeed "." do
+                %a(href="https://poloniex.com/exchange/btc_xdp" target="_blank") Poloniex
 
     .section.next
       .container
