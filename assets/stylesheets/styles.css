@@ -2033,6 +2033,11 @@ p + p {
   height: 30px;
   width: 30px; }
 
+.donations a {
+  color: white; }
+  .donations a:hover {
+    color: #ddd; }
+
 @media (min-width: 768px) and (max-width: 991px) {
   body {
     font-size: 17px; }
