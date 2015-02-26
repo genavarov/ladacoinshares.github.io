@@ -1,0 +1,67 @@
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://czarcoin.co" # the base hostname & protocol for your site
+
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: Czarcoin
+  avatar: czarcoin.png
+  gravatar: # email md5 hash
+  description: "Autonomous Distributed Representation" # used by search engines
+  
+  # Header and footer text
+  header_text: >
+    <h2>Czarcoin is a platform built to enhance Autonomous Distributed Representation</h2>
+     
+    <p class='lead'>An open source cryptocurrency to enable realtime transactions amongst peers. Utilizing a powerful decentralized network, it serves as a foundation for commerce. Each owner is empowered with the self management of their stake.  The most advanced implementation of an open digital ecomony with a conservative approach to sustainability. Members of this network are rewarded proportionally for their contributions.</p>
+  footer_text: >
+   © <a href="https://treefunder.co">Treefunder Incorporated</a>
+  
+  # Icons
+  rss: false
+  email_address: # full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket: 
+  dribbble: 
+  facebook: "czarcoin"
+  flickr: 
+  github: "rohanchandra/type-theme"
+  google_plus: "+CzarcoinCo"
+  instagram: 
+  linkedin:  # full URL
+  pinterest: 
+  reddit: "czarcoin"
+  soundcloud: 
+  stack_exchange:  # full URL
+  steam: 
+  tumblr: 
+  twitter: "czarcoin"
+  wordpress: 
+  youtube: 
+  
+  # Scripts
+  google_analytics: "UA-21065583-19" # tracking id, e.g. "UA-000000-01"
+  disqus_shortname:
+  
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+  
+  # Colors, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: :compressed
