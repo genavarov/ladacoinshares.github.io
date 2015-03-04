@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Czarcoin</title>
-    <atom:link href="https://czarcoin.co/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>https://czarcoin.co/</link>
-    <description>Autonomous Distributed Representation</description>
-    <pubDate>Thu, 26 Feb 2015 00:57:59 -0500</pubDate>
+    <title>Reddcraft</title>
+    <atom:link href="https://czarparty.co/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://czarparty.co/</link>
+    <description>Distributed Application Development on the Reddcoin Network</description>
+    <pubDate>Wed, 04 Mar 2015 02:44:26 -0500</pubDate>
     
       <item>
         <title>Sample post</title>
-        <link>https://czarcoin.co/blog/2014/11/30/sample-post.html</link>
-        <guid isPermaLink="true">https://czarcoin.co/blog/2014/11/30/sample-post.html</guid>
+        <link>https://czarparty.co/blog/2014/11/30/sample-post.html</link>
+        <guid isPermaLink="true">https://czarparty.co/blog/2014/11/30/sample-post.html</guid>
         <description>&lt;p&gt;Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -38,8 +38,8 @@
     
       <item>
         <title>Feature images</title>
-        <link>https://czarcoin.co/blog/2014/11/29/feature-images.html</link>
-        <guid isPermaLink="true">https://czarcoin.co/blog/2014/11/29/feature-images.html</guid>
+        <link>https://czarparty.co/blog/2014/11/29/feature-images.html</link>
+        <guid isPermaLink="true">https://czarparty.co/blog/2014/11/29/feature-images.html</guid>
         <description>&lt;p&gt;This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages.&lt;/p&gt;
 
 </description>
@@ -48,8 +48,8 @@
     
       <item>
         <title>Markdown and HTML</title>
-        <link>https://czarcoin.co/blog/2014/11/28/markdown-and-html.html</link>
-        <guid isPermaLink="true">https://czarcoin.co/blog/2014/11/28/markdown-and-html.html</guid>
+        <link>https://czarparty.co/blog/2014/11/28/markdown-and-html.html</link>
+        <guid isPermaLink="true">https://czarparty.co/blog/2014/11/28/markdown-and-html.html</guid>
         <description>&lt;p&gt;Jeykll supports the use of &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt; with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.&lt;/p&gt;
 
 &lt;p&gt;Tables have also been extended from Markdown:&lt;/p&gt;

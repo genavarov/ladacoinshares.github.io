@@ -1,20 +1,19 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://czarcoin.co" # the base hostname & protocol for your site
+url: "https://czarparty.co" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: Czarcoin
-  avatar: czarcoin.png
+  title: Reddcraft
+  avatar: XRT.png
   gravatar: # email md5 hash
-  description: "Autonomous Distributed Representation" # used by search engines
+  description: "Distributed Application Development on the Reddcoin Network" # used by search engines
   
   # Header and footer text
   header_text: >
-    <h2>Czarcoin is a platform built to enhance Autonomous Distributed Representation</h2>
-     
-    <p class='lead'>An open source cryptocurrency to enable realtime transactions amongst peers. Utilizing a powerful decentralized network, it serves as a foundation for commerce. Each owner is empowered with the self management of their stake.  The most advanced implementation of an open digital ecomony with a conservative approach to sustainability. Members of this network are rewarded proportionally for their contributions.</p>
+    <h2>Reddcraft is a decentralized exchange built for the Reddcoin Network.</h2>
+    <p class='lead'></p>
   footer_text: >
    © <a href="https://treefunder.co">Treefunder Incorporated</a>
   
@@ -24,24 +23,24 @@ theme:
   behance:
   bitbucket: 
   dribbble: 
-  facebook: "czarcoin"
+  facebook: 
   flickr: 
-  github: "rohanchandra/type-theme"
-  google_plus: "+CzarcoinCo"
+  github: "reddcraft"
+  google_plus: 
   instagram: 
   linkedin:  # full URL
   pinterest: 
-  reddit: "czarcoin"
+  reddit: "reddcraft"
   soundcloud: 
   stack_exchange:  # full URL
   steam: 
   tumblr: 
-  twitter: "czarcoin"
+  twitter: "ReddcraftXRT"
   wordpress: 
   youtube: 
   
   # Scripts
-  google_analytics: "UA-21065583-19" # tracking id, e.g. "UA-000000-01"
+  google_analytics: "UA-21065583-23" # tracking id, e.g. "UA-000000-01"
   disqus_shortname:
   
   # Localization strings
