@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reddcraft</title>
+    <title>Paycoinshares</title>
     <atom:link href="https://czarparty.co/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://czarparty.co/</link>
-    <description>Distributed Application Development on the Reddcoin Network</description>
-    <pubDate>Wed, 04 Mar 2015 02:44:26 -0500</pubDate>
+    <description>Distributed Application Development on the Paycoin Network</description>
+    <pubDate>Wed, 04 Mar 2015 03:20:03 -0500</pubDate>
     
       <item>
         <title>Sample post</title>

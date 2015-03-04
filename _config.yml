@@ -5,14 +5,14 @@ url: "https://czarparty.co" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: Reddcraft
-  avatar: XRT.png
+  title: Paycoinshares
+  avatar: XPS.png
   gravatar: # email md5 hash
-  description: "Distributed Application Development on the Reddcoin Network" # used by search engines
+  description: "Distributed Application Development on the Paycoin Network" # used by search engines
   
   # Header and footer text
   header_text: >
-    <h2>Reddcraft is a decentralized exchange built for the Reddcoin Network.</h2>
+    <h2>Paycoinshares is a protocol for exchange on the Paycoin Network.</h2>
     <p class='lead'></p>
   footer_text: >
    © <a href="https://treefunder.co">Treefunder Incorporated</a>
@@ -25,22 +25,22 @@ theme:
   dribbble: 
   facebook: 
   flickr: 
-  github: "reddcraft"
+  github: "paycoinshares"
   google_plus: 
   instagram: 
   linkedin:  # full URL
   pinterest: 
-  reddit: "reddcraft"
+  reddit: "paycoinshares"
   soundcloud: 
   stack_exchange:  # full URL
   steam: 
   tumblr: 
-  twitter: "ReddcraftXRT"
+  twitter: "Paycoinshares"
   wordpress: 
   youtube: 
   
   # Scripts
-  google_analytics: "UA-21065583-23" # tracking id, e.g. "UA-000000-01"
+  google_analytics: "UA-21065583-24" # tracking id, e.g. "UA-000000-01"
   disqus_shortname:
   
   # Localization strings
