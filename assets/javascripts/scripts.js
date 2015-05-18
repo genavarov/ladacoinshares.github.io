@@ -29,7 +29,7 @@ $(".showable-toggle").click(function (e) {
   $(e.currentTarget).closest(".row").toggleClass("open");
 });
 
-$(".xdp .headline").click(function (e) {
+$(".xbj .headline").click(function (e) {
   $(e.currentTarget).closest(".section").toggleClass("open");
 });
 

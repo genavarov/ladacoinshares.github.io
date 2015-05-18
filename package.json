@@ -1,7 +1,7 @@
 {
-  "name": "Dogeparty",
+  "name": "Bluejudy",
   "version": "0.0.1",
-  "description": "Such party. Much doge. Wow.",
+  "description": "Such party. Much wdc. Wow.",
   "private": true,
   "scripts": {
     "preinstall": "bundle install && bourbon install --path=_src/sass",

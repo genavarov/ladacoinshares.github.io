@@ -1,4 +1,4 @@
-# [dogeparty.io](http://www.dogeparty.io)
+# [bluejudy.io](http://www.bluejudy.io)
 
 ## Development
 
